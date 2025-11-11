@@ -20,7 +20,6 @@ type Tela =
   | "senha"
   | "dashboards";
 
-// ✅ Tipo dos itens do pedido
 interface ItemPedido {
   descricao: string;
   quantidade: number;
@@ -30,10 +29,8 @@ interface ItemPedido {
 const App: React.FC = () => {
   const [tela, setTela] = useState<Tela>("home");
 
-  // ✅ itens com tipo correto
   const [itens, setItens] = useState<ItemPedido[]>([]);
 
-  // ✅ total calculado automaticamente
   const total = itens.reduce(
     (acc, item) => acc + item.quantidade * item.valorUnitario,
     0
