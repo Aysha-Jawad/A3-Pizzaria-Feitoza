@@ -93,7 +93,7 @@ const Senha: React.FC<SenhaProps> = ({ onNext }) => {
       {etapa === 4 && (
         <>
           <h1>Senha redefinida com sucesso</h1>
-          <img src="teste2.jpeg" alt="Feitoza's Pizza" className="logo-top" />
+          <img src="logo_coracao.png" alt="Feitoza's Pizza" className="logo-top" />
           <button className="btn-red" onClick={onNext}>
             Voltar para tela de login
           </button>
